@@ -1,0 +1,56 @@
+.footer{
+   
+    height: fit-content;
+    background-color: rgb(228, 219, 219);
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    border-bottom: 5px solid white;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    justify-content: center;
+    margin-left: 2rem;
+}
+.social img{
+    height: 30px;
+    width: 30px;
+    margin: 2px;
+    border: None;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.footer-icon{
+    margin-left: 5rem;
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid white;
+}
+.contact{
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.copyright{
+    margin-left: 2rem;
+    font-size: 0.8rem;
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

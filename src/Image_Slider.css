@@ -1,0 +1,29 @@
+.scroll-container {
+       margin-top: 1rem;
+       border-top: 1px solid rgb(150, 96, 106);  
+       border-bottom: 1px solid rgb(150, 96, 106);   
+       margin-left: 1%;
+       width: 98%;
+       overflow: hidden;
+}
+
+.image-track {
+       display: flex;
+       animation: scroll 35s both linear infinite; 
+       
+       /* Adjust duration for speed */
+}
+
+.image-track img {
+       flex-shrink: 0;
+       width: 60%; /* Adjust as needed */
+       height: 400px;
+       margin-right: 5px; /* Add spacing between images */
+}
+@keyframes scroll {
+       0%{ transform: translateX(0); }
+      100%{ transform: translateX(-300%); } /* Adjust based on the number of images */
+}
+.image-track:hover {
+    animation-play-state: paused;
+}
