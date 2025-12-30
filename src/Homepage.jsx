@@ -6,7 +6,7 @@ import Footer from './Footer.jsx';
 import './Homepage.css';
 import './Pagemap.jsx';
 import Pagemap from "./Pagemap.jsx";
-
+import { Link } from "react-router-dom";
 
 function Homepage() {
     return (
@@ -78,10 +78,30 @@ function Homepage() {
                     </p>
             </div>
             <div className="donation">
-                <a  href=""><button class="d1">Sponsor a Pubic Digital Library <img class="imgs" src="./images/Library Book.png"/> <h3 class="d2">Donate Now</h3></button></a>
-            <a  href=""><button class="d1">Sponsor Study Materials for Kids <img class="imgs" src="./images/Study Material.png"/><h3 class="d2">Donate Now</h3></button></a>
-            <a  href=""><button class="d1">Sponsor Meal for Marginalised Community<img class="imgs" src="./images/food.png"/><h3 class="d2">Donate Now</h3></button></a> 
-            </div>    
+               <Link to="/donate" className="donation-link">
+               <button className="d1">
+               Sponsor a Public Digital Library
+               <img className="imgs" src="./images/Library Book.png" alt="Library" />
+               <h3 className="d2">Donate Now</h3>
+               </button>
+               </Link>
+
+               <Link to="/donate" className="donation-link">
+               <button className="d1">
+               Sponsor Study Materials
+               <img className="imgs" src="./images/Study Material.png" alt="Study Material" />
+               <h3 className="d2">Donate Now</h3>
+               </button>
+               </Link>
+
+               <Link to="/donate" className="donation-link">
+               <button className="d1">
+                Sponsor a Meal
+               <img className="imgs" src="./images/food.png" alt="Food" />
+               <h3 className="d2">Donate Now</h3>
+               </button>
+               </Link>
+            </div>  
         </div>
 
         <div className="container4">
@@ -94,7 +114,7 @@ function Homepage() {
                 </div>
                 <div className="card">
                     <img src="./images/File 8.png" alt="" />
-                    <h3>2000+</h3>
+                    <h3>10000+</h3>
                     <p>Study Material Kits Distributed</p>
                 </div>
                 <div className="card">
@@ -125,21 +145,29 @@ function Homepage() {
             <div className="involved-buttons">
                 <div className="card1">
                     <img src="./images/volunteer.png" alt="volunteer" />
-                     <a href=""><button class="d3">Become a Volunteer</button></a>    
+                    <Link to="/involved" className="donation-link">
+                        <button className="d3">Become a Volunteer</button>
+                    </Link>
                 </div>
                 <div className="card1">
                     <img src="./images/donate.png" alt="donate" />
-                    <a href=""><button class="d3">Donate Now</button></a>
+                    <Link to="/donate" className="donation-link">
+                    <button className="d3">Donate Now</button>
+                    </Link>
                 </div>
                 <div className="card1">
                     <img src="./images/fundraise.png" alt="fundraise" />
-                    <a href=""><button class="d3">Fundraise</button></a>
+                    <Link to="/involved" className="donation-link">
+                        <button className="d3">Fundraise</button>
+                    </Link>
                 </div>
                 <div className="card1">
                     <img src="./images/partner.png" alt="partner" />
-                    <a href=""><button class="d3">Partner With Us</button></a>
-                </div>    
-            </div>      
+                    <Link to="/involved" className="donation-link">
+                        <button className="d3">Partner With Us</button>
+                    </Link>
+                </div>
+            </div>
         </div>
         <Pagemap/>
         <Footer/>

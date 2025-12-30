@@ -1,0 +1,43 @@
+.getinvolved-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.page-intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.getinvolved-section {
+  margin-bottom: 60px;
+}
+
+.getinvolved-section h2 {
+  margin-bottom: 10px;
+  color: #1cac1d;
+}
+
+.getinvolved-section p {
+  margin-bottom: 10px;
+}
+
+.getinvolved-section ul {
+  padding-left: 20px;
+}
+
+.getinvolved-section li {
+  margin-bottom: 6px;
+}
+
+/* Fix scroll position if header is fixed */
+.getinvolved-section {
+  scroll-margin-top: 90px;
+}

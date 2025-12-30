@@ -1,29 +1,59 @@
 .scroll-container {
-       margin-top: 1rem;
-       border-top: 1px solid rgb(150, 96, 106);  
-       border-bottom: 1px solid rgb(150, 96, 106);   
-       margin-left: 1%;
-       width: 98%;
-       overflow: hidden;
+    margin-top: 1rem;
+    border-top: 1px solid rgb(150, 96, 106);  
+    border-bottom: 1px solid rgb(150, 96, 106);   
+    margin-left: 1%;
+    width: 98%;
+    overflow: hidden;
 }
 
 .image-track {
-       display: flex;
-       animation: scroll 35s both linear infinite; 
-       
-       /* Adjust duration for speed */
+    display: flex;
+    animation: scroll 35s linear infinite; 
 }
 
 .image-track img {
-       flex-shrink: 0;
-       width: 60%; /* Adjust as needed */
-       height: 400px;
-       margin-right: 5px; /* Add spacing between images */
+    flex-shrink: 0;
+    width: 60%; 
+    height: 400px;
+    margin-right: 5px;
+    object-fit: cover; /* ensures images scale nicely */
+    border-radius: 8px; /* optional: makes it look modern */
 }
+
 @keyframes scroll {
-       0%{ transform: translateX(0); }
-      100%{ transform: translateX(-300%); } /* Adjust based on the number of images */
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-300%); }
 }
+
 .image-track:hover {
     animation-play-state: paused;
+}
+
+/* ✅ Responsive Styling */
+@media (max-width: 1024px) {
+    .image-track img {
+        width: 70%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-track img {
+        width: 85%; 
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .image-track img {
+        width: 100%; 
+        height: 250px;
+        margin-right: 3px;
+    }
 }

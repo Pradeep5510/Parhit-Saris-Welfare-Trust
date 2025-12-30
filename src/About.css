@@ -1,0 +1,328 @@
+.foundation{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #BDE0FE;
+}
+.foundation h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: blue;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.foundation h3{
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color:black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.foundation p{
+    font-size: 1.1rem;
+    font-style:normal;
+    font-weight:500;
+    color: #555;
+    text-align: justify;
+    max-height: 80%;
+    justify-content: space-around;
+}
+
+.team{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #BDE0FE;
+
+}
+.team h3{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color:black;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.trustees{
+    display: flex;
+    align-items: center;
+
+}
+.trustee{
+    padding: 10px;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+
+}
+.trustees h4{
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color:black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.trustee img{
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+}
+.trustee h5{
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color:black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.trustee p{
+    
+    font-size: 1rem;
+    font-style:normal;
+    font-weight:500;
+    color: #555;
+    text-align: justify;
+    max-height: 80%;
+    justify-content: space-around;
+}
+.impact{
+    background-color: #BDE0FE;
+    padding: 30px;
+
+}
+.impact h3{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color:black;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.impact p{
+    font-size: 1rem;
+    font-style:normal;
+    font-weight:500;
+    color: #555;
+    text-align: justify;
+    max-height: 80%;
+    justify-content: space-around;
+    
+}
+.ul{
+    font-size: 1rem;
+    font-style:normal;
+    font-weight:500;
+    color: #555;
+    text-align: justify;
+    max-height: 80%;
+    justify-content: space-around;
+
+}
+.partners{
+    background-color: #BDE0FE;
+    padding: 30px;
+}
+.partners h2{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color:black;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.partners p {
+    font-size: 1rem;
+    font-style:normal;
+    font-weight:500;
+    color: #555;
+    text-align: justify;
+    max-height: 80%;
+    justify-content: space-around;
+}
+
+.partner-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.partner-logos img {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.partner-logos img:hover {
+  transform: scale(1.1);
+}
+.testimonials{
+    background-color: #BDE0FE;
+    padding: 30px;
+
+}
+.testimonials h2{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color:black;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.testimonials p{
+    font-size: 1rem;
+    font-style:normal;
+    font-weight:500;
+    color: #555;
+    text-align: justify;
+    max-height: 80%;
+    justify-content: space-around;
+}
+
+
+.careers{
+    background-color: #BDE0FE;
+    padding: 30px;
+    
+}
+.careers h2{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color:black;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.careers p{
+    font-size: 1rem;
+    font-style:normal;
+    font-weight:500;
+    color: #555;
+    text-align: justify;
+    max-height: 80%;
+    justify-content: space-around;
+}
+
+
+/* Existing styles remain as is */
+
+/* ===== MOBILE VIEW (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  .foundation,
+  .team,
+  .impact,
+  .partners,
+  .testimonials,
+  .careers {
+    padding: 15px;
+  }
+
+  .foundation h2,
+  .team h3,
+  .impact h3,
+  .partners h2,
+  .testimonials h2,
+  .careers h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .foundation h3,
+  .trustees h4 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .foundation p,
+  .impact p,
+  .partners p,
+  .testimonials p,
+  .careers p,
+  .trustee p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  /* Trustees section stacked */
+  .trustees {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trustee {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .trustee img {
+    width: 90%;
+    height: auto;
+  }
+
+  .trustee h5 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* Partner logos stacked */
+  .partner-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .partner-logos img {
+    max-width: 120px;
+    max-height: 120px;
+    margin: 10px;
+  }
+}
+
+/* ===== EXTRA SMALL SCREENS (max-width: 480px) ===== */
+@media (max-width: 480px) {
+  .foundation h2,
+  .team h3,
+  .impact h3,
+  .partners h2,
+  .testimonials h2,
+  .careers h2 {
+    font-size: 1.5rem;
+  }
+
+  .foundation h3,
+  .trustees h4 {
+    font-size: 1.2rem;
+  }
+
+  .trustee img {
+    width: 100%;
+    height: auto;
+  }
+
+  .partner-logos img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
