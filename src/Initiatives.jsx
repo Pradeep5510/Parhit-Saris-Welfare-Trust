@@ -30,6 +30,26 @@ function Initiatives() {
       <Header />
       <div className="initiatives-container">
         <h1 className="initiatives-title">Our Initiatives</h1>
+        <p className="initiatives-intro">
+          We are dedicated to making a positive impact in the community through
+          various initiatives aimed at addressing key social issues.
+        </p>
+        <h4 strong>Our Existing Initiatives:</h4>
+        <ul>
+          <li>PUBLIC DIGITAL LEARNING CENTER</li>
+          <li>DIGITAL INCLUSION WORK SHOP</li>
+          <li>PARHIT-30 CLASSROOM PROGRAM</li>
+          <li>STUDY KITS DISTRIBUTION DRIVE</li>
+          <li>BLANKET DISTRIBUTION DRIVE</li>
+          <li>FOOD / GROCERY DISTRIBUTION DRIVE</li>
+          <li>MENSTRUAL HYGIENE AWARENESS CAMPAIGN</li>
+          <li>HEALTH CHECK-UP CAMPS</li>
+          <li>SKILL DEVELOPMENT WORKSHOPS</li>
+          <li>SELF-EMPLOYMENT SUPPORT PROGRAMS</li>
+          <li>YOUTH CAREER GUIDANCE SESSIONS</li>
+          <li>TREE PLANTATION DRIVE</li>
+
+        </ul>
 
         <section id="educational" className="initiative-section">
           <h2 className="initiative-heading">Educational Initiatives</h2>
@@ -88,7 +108,7 @@ function Initiatives() {
           <img className="initiative-image" src="./images/File 15.JPG" alt="Health" />
           <img className="initiative-image" src="./images/File 23.png" alt="Health" />
           <img className="initiative-image" src="./images/File 31.png" alt="Health" />
-          <img className="initiative-image" src="./images/File 34.png" alt="Health" />
+          <img className="initiative-image" src="./images/mooncatcher.png" alt="Health" />
         </section>
 
        <section id="empowerment" className="initiative-section">
@@ -165,10 +185,10 @@ function Initiatives() {
 
   {/* Blanket Donation */}
   <div className="sub-initiative">
-    <h4 className="sub-initiative-heading">Blanket Donation Drive</h4>
+    <h4 className="sub-initiative-heading">1. Blanket Distribution Program</h4>
     <p className="initiative-text">
       During harsh winters, many homeless and elderly individuals are exposed to
-      extreme cold without adequate protection. Our blanket donation drive focuses
+      extreme cold without adequate protection. Our blanket distribution program focuses
       on providing warmth, comfort, and protection to those living in vulnerable
       conditions across streets, shelters, and low-income communities.
     </p>
@@ -176,7 +196,7 @@ function Initiatives() {
 
   {/* Food Distribution */}
   <div className="sub-initiative">
-    <h4 className="sub-initiative-heading">Food Distribution Program</h4>
+    <h4 className="sub-initiative-heading">2. Food Distribution Program</h4>
     <p className="initiative-text">
       Our food distribution program aims to fight hunger by providing freshly
       prepared meals and essential food supplies to underprivileged families,
@@ -184,6 +204,7 @@ function Initiatives() {
       and emergency relief efforts, we ensure that no one goes to bed hungry.
     </p>
   </div>
+  <h5>Impact Glimpses:</h5>
 
   <img
     className="initiative-image"
@@ -193,7 +214,7 @@ function Initiatives() {
   <img
     className="initiative-image"
     src="./images/File 46.png"
-    alt="Blanket Donation Drive"
+    alt="Blanket Distribution Program"
   />
   <img
     className="initiative-image"
@@ -235,6 +256,12 @@ function Initiatives() {
             sustainable livelihood programs, digital literacy drives, clean water
             campaigns, and eco-friendly community development projects.
           </p>
+          <p>These are our upcoming initiatives aimed at creating a positive impact in the community:</p>
+          <ul>
+            <li><strong>PMSD - PARHIT MEDHA SCHOLARSHIP DRIVE:</strong> A scholarship program to support the education of underprivileged students.</li>
+            <li><strong>PMLD - PARHIT MOBILE LIBRARY DRIVE:</strong> Programs to enhance digital skills and bridge the digital divide in underserved communities.</li>
+            <li><strong>PDUD - PARHIT DIVYANG UTTHAN DRIVE:</strong> Initiatives aimed at empowering differently-abled individuals through skill development, awareness, and support.</li>
+          </ul>
         </section>
       </div>
       <Pagemap />

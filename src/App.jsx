@@ -1,18 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Homepage from './Homepage.jsx';
 import About from './About.jsx';
 import Initiatives from './Initiatives.jsx';
 import GetInvolved from './GetInvolved.jsx';
 import Media from './Media.jsx';
-import Contact from './Contact.jsx'
+import Contact from './Contact.jsx';
 import Donate from './Donate.jsx';
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -23,7 +24,7 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 

@@ -11,28 +11,39 @@ function NavbarScroll() {
   const location = useLocation();
 
   const handleScrollToSection = (page, sectionId) => {
-    if (location.pathname === `/${page}`) {
+    const hashPath = `/${page}`;
+
+    // If already on the correct page
+    if (location.pathname === hashPath) {
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      navigate(`/${page}#${sectionId}`);
+      // HashRouter-safe navigation
+      navigate(hashPath);
+
+      // Wait for page render, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300);
     }
   };
 
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="/"></Navbar.Brand>
+        <Navbar.Brand onClick={() => navigate("/")}></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-            
+
             {/* About Us Dropdown */}
             <NavDropdown
               title="About Us"
-              id="about-dropdown"
               show={openDropdown === "about"}
               onMouseEnter={() => setOpenDropdown("about")}
               onMouseLeave={() => setOpenDropdown(null)}
@@ -48,7 +59,6 @@ function NavbarScroll() {
             {/* Initiatives Dropdown */}
             <NavDropdown
               title="Our Initiatives"
-              id="initiatives-dropdown"
               show={openDropdown === "initiatives"}
               onMouseEnter={() => setOpenDropdown("initiatives")}
               onMouseLeave={() => setOpenDropdown(null)}
@@ -63,7 +73,6 @@ function NavbarScroll() {
             {/* Get Involved Dropdown */}
             <NavDropdown
               title="Get Involved"
-              id="involved-dropdown"
               show={openDropdown === "involved"}
               onMouseEnter={() => setOpenDropdown("involved")}
               onMouseLeave={() => setOpenDropdown(null)}
@@ -74,9 +83,10 @@ function NavbarScroll() {
               <NavDropdown.Item onClick={() => handleScrollToSection("involved", "donate")}>Donate</NavDropdown.Item>
             </NavDropdown>
 
-            {/* Other pages (just links) */}
-            <Nav.Link href="/media">Media</Nav.Link>
-            <Nav.Link href="/contact">Contact Us</Nav.Link>
+            {/* Correct HashRouter links */}
+            <Nav.Link onClick={() => navigate("/media")}>Media</Nav.Link>
+            <Nav.Link onClick={() => navigate("/contact")}>Contact Us</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
