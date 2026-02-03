@@ -1,5 +1,6 @@
 import React from "react";
 import './Pagemap.css';
+import { Link } from "react-router-dom";
 
 function Pagemap() {
     return (
@@ -8,33 +9,36 @@ function Pagemap() {
             <div className="pagemap-content">
                 <h3>About Us</h3>
                 <ul>
-                    <li> <a href="">Who We Are</a></li>
-                    <li> <a href="">Our Team</a></li>
-                    <li><a href="">Our Impact</a></li>
-                    <li><a href="">Our Partners</a></li>
-                    <li><a href="">Testimonials</a></li>
-                    <li><a href="">Careers</a></li>
+                    <li> <Link to="./About">Who We Are</Link></li>
+                    <li> <Link to="./Team">Our Team</Link></li>
+                    <li><Link to="./Impact">Our Impact</Link></li>
+                    <li><Link to="./Partners">Our Partners</Link></li>
+                    <li><Link to="./Testimonials">Testimonials</Link></li>
+                    <li><Link to="./Careers">Careers</Link></li>
                 </ul>
                 
             </div>
             <div className="pagemap-content">
                 <h3>Our Initiatives</h3>
                 <ul>
-                    <li> <a href="">Educational Initiatives</a></li>
-                    <li> <a href="">Health and Hygiene</a></li>
-                    <li><a href="">Social Empowerment</a></li>
-                    <li><a href="">Social Welfare</a></li>
-                    <li><a href="">Upcoming Initiatives</a></li>
+                    <li> <Link to="./EducationalInitiatives">Educational Initiatives</Link></li>
+                    <li> <Link to="./HealthAndHygiene">Health and Hygiene</Link></li>
+                    <li><Link to="./SocialEmpowerment">Social Empowerment</Link></li>
+                    <li><Link to="./SocialWelfare">Social Welfare</Link></li>
+                    <li><Link to="./UpcomingInitiatives">Upcoming Initiatives</Link></li>
                 </ul>
             </div>
             <div className="pagemap-content">
                 <h3>Contact Us</h3>
                 <ul>
-                    <li> <a href="">Contact Information</a></li>
-                    <li> <a href="">Support and FAQs</a></li>
-                    <li><a href="">Feedback</a></li>
-                    <li><a href="">Media Inquiries</a></li>
-                    <li><a href="">Volunteer Opportunities</a></li>
+                    <li> <Link to="./Contact">Contact Information</Link></li>
+                    <li> <Link to="./Support">Support and FAQs</Link></li>
+                    <li><Link to="./Feedback">Feedback</Link></li>
+                    <li><Link to="./Media">Media Inquiries</Link></li>
+                    <li><Link to="./Volunteer">Volunteer Opportunities</Link></li>
+                    <li><Link to="./Privacy">Privacy Policy</Link></li>
+                    <li><Link to="./Privacy">Terms & Conditions</Link></li>
+                    <li><Link to="./Privacy">Refund & Cancellation Policy</Link></li>
                 </ul>
             </div>
             <div className="subscribe">

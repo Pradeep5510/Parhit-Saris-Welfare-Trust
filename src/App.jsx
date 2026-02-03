@@ -10,6 +10,7 @@ import Media from './Media.jsx';
 import Contact from './Contact.jsx';
 import Donate from './Donate.jsx';
 import ScrollToTop from "./ScrollToTop";
+import Privacy from './Privacy.jsx';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/donate" element={<Donate />} />
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
     </HashRouter>
   );
