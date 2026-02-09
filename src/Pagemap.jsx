@@ -35,10 +35,10 @@ function Pagemap() {
                     <li> <Link to="./Support">Support and FAQs</Link></li>
                     <li><Link to="./Feedback">Feedback</Link></li>
                     <li><Link to="./Media">Media Inquiries</Link></li>
-                    <li><Link to="./Volunteer">Volunteer Opportunities</Link></li>
-                    <li><Link to="./Privacy">Privacy Policy</Link></li>
-                    <li><Link to="./Privacy">Terms & Conditions</Link></li>
-                    <li><Link to="./Privacy">Refund & Cancellation Policy</Link></li>
+                    <li><Link to="./Volunteer">Volunteer Opportunities </Link></li>
+                    <li><Link to="./Privacy">Privacy Policy </Link></li>
+                    <li><Link to="./Privacy">Terms & Conditions </Link></li>
+                    <li><Link to="./Privacy">Refund & Cancellation Policy </Link></li>
                 </ul>
             </div>
             <div className="subscribe">
