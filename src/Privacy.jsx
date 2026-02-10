@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
-import "./Contact.css";
+import "./Privacy.css";
 import Pagemap from "./Pagemap.jsx";
 
 function Privacy() {
@@ -66,7 +66,7 @@ function Privacy() {
 
         <p>
           These Terms and Conditions shall be governed by and construed in accordance with the laws of India.
-          Any disputes shall be subject to the exclusive jurisdiction of the courts in your registered city and state.
+          Any disputes shall be subject to the exclusive jurisdiction of the courts in Rohtas , Bihar.
         </p>
       </div>
 
