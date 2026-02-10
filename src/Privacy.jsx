@@ -42,9 +42,7 @@ function Privacy() {
                with transaction details. Genuine cases will be reviewed and resolved.</p>
            
             <p>If you have any questions or concerns about these terms, please contact us.</p>
-          </div>
-
-        
+          </div>        
         </div>
         <Pagemap />
         <Footer />
